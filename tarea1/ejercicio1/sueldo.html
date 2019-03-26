@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Trabajadores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <form id="form">
+    <div class="jumbotron">
+        <h1>Trabajadores</h1>
+        <p>Registro de salario de trabajadores</p>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="row justify-content-around">
+            <div class="col-4" id="form">
+                <form>
+                    <div class="form-group row">
+                        <label for="idTrabajador" class="col-form-label">ID Trabajador</label>
+                        <input type="text" class="form-control" id="idTrabajador" placeholder="12345">
+                    </div>
+                    <div class="form-group row">
+                        <label for="name" class="col-form-label">Nombre de Trabajador</label>
+                        <input type="text" class="form-control" id="name" placeholder="Juan Pérez">
+                    </div>
+                    <div class="form-group row">
+                        <label for="sueldo" class="col-form-label">Sueldo</label>
+                        <input type="number" class="form-control" id="sueldo" placeholder="15000">
+                    </div>
+                    <div class="form-group row">
+                        <label for="nacimiento" class="col-form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="nacimiento">
+                    </div>
+                    <div class="form-group row">
+                        <label for="contratacion" class="col-form-label">Fecha de Contratacion</label>
+                        <input type="date" class="form-control" id="contratacion">
+                    </div>
+                    <button type="button" id="btnAdd" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+            <div class="col-4 ">
+                <table id="info" class="table ml-2">
+                    <thead>
+                        <tr>
+                            <th>indicador</th>
+                            <th>valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Empleados con sueldo hasta $10,000</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Empleados con sueldo mayor que $10,000 y menor o igual a $20,000</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Empleados con sueldo mayor que $20,000</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Sueldo promedio</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th>Edad promedio</th>
+                        <th></th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div class="row justify-content-around" style="height: 200px">
+            <div class="col-md-8">
+                <table id="sueldos" class="table">
+                    <thead>
+                        <tr>
+                            <th>Numero del Trabajador</th>
+                            <th>Nombre</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Fecha de contratacion</th>
+                            <th>Sueldo</th>
+                            <th>Edad</th>
+                            <th>Antiguedad</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+</div>
+</form>
+        <script src="./main.js" type="module"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
